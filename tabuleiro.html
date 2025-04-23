@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabuleiro de Xadrez Simples</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .tabuleiro {
+            display: grid;
+            grid-template-columns: repeat(8, 60px);
+            grid-template-rows: repeat(8, 60px);
+            border: 10px solid #333;
+        }
+        
+        .casa {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+        }
+        
+        .branca {
+            background-color: #f0d9b5;
+        }
+        
+        .preta {
+            background-color: #b58863;
+        }
+    </style>
+</head>
+<body>
+    <div class="tabuleiro">
+        <!-- Primeira linha (peças pretas) -->
+        <div class="casa preta">&#9820;</div>
+        <div class="casa branca">&#9822;</div>
+        <div class="casa preta">&#9821;</div>
+        <div class="casa branca">&#9819;</div>
+        <div class="casa preta">&#9818;</div>
+        <div class="casa branca">&#9821;</div>
+        <div class="casa preta">&#9822;</div>
+        <div class="casa branca">&#9820;</div>
+        
+        <!-- Segunda linha (peões pretos) -->
+        <div class="casa branca">&#9821;</div>
+        <div class="casa preta">&#9821;</div>
+        <div class="casa branca">&#9821;</div>
+        <div class="casa preta">&#9821;</div>
+        <div class="casa branca">&#9821;</div>
+        <div class="casa preta">&#9821;</div>
+        <div class="casa branca">&#9821;</div>
+        <div class="casa preta">&#9821;</div>
+        
+        <!-- Linhas vazias -->
+        <div class="casa preta"></div><div class="casa branca"></div>
+        <div class="casa preta"></div><div class="casa branca"></div>
+        <div class="casa preta"></div><div class="casa branca"></div>
+        <div class="casa preta"></div><div class="casa branca"></div>
+        
+        <div class="casa branca"></div><div class="casa preta"></div>
+        <div class="casa branca"></div><div class="casa preta"></div>
+        <div class="casa branca"></div><div class="casa preta"></div>
+        <div class="casa branca"></div><div class="casa preta"></div>
+        
+        <!-- Sétima linha (peões brancos) -->
+        <div class="casa preta">&#9817;</div>
+        <div class="casa branca">&#9817;</div>
+        <div class="casa preta">&#9817;</div>
+        <div class="casa branca">&#9817;</div>
+        <div class="casa preta">&#9817;</div>
+        <div class="casa branca">&#9817;</div>
+        <div class="casa preta">&#9817;</div>
+        <div class="casa branca">&#9817;</div>
+        
+        <!-- Oitava linha (peças brancas) -->
+        <div class="casa branca">&#9814;</div>
+        <div class="casa preta">&#9816;</div>
+        <div class="casa branca">&#9815;</div>
+        <div class="casa preta">&#9813;</div>
+        <div class="casa branca">&#9812;</div>
+        <div class="casa preta">&#9815;</div>
+        <div class="casa branca">&#9816;</div>
+        <div class="casa preta">&#9814;</div>
+    </div>
+</body>
+</html>
